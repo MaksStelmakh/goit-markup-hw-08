@@ -20,3 +20,8 @@
     fill: var(--wite-color);
   }
 }
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -115,6 +115,11 @@ body {
   fill: var(--wite-color);
 }
 
+.team-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -547,7 +552,14 @@ body {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work-title {
@@ -590,24 +602,15 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.team-item {
-  width: 1170px;
-  background: var(--wite-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-container {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-title {
@@ -619,11 +622,15 @@ body {
   margin-bottom: 50px;
 }
 
-.team-info {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+.team-list {
+  margin-bottom: -30px;
+}
+
+.team-item {
+  background: var(--wite-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .team-name {
@@ -633,6 +640,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .team-position {
