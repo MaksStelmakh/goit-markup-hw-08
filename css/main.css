@@ -314,6 +314,115 @@ body {
   margin: 0 auto;
 }
 
+.header-svg {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.mobile-svg {
+  width: 10px;
+  height: 16px;
+}
+
+.header__link {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__link.current::after {
+  transform: scaleX(1);
+}
+
+.header__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(0);
+}
+
+.header__link:hover::after, .header__link:focus::after {
+  transform: scaleX(1);
+}
+
+.header__link:hover, .header__link:focus {
+  color: var(--accent-color);
+}
+
+.header__item {
+  position: relative;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.mail {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mail {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__commun-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__commun-item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.header__commun-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__commun-link:hover, .header__commun-link:focus {
+  color: var(--accent-color);
+  fill: currentColor;
+}
+
 .navigation {
   display: none;
 }
@@ -516,119 +625,10 @@ body {
   color: var(--second-color);
 }
 
-.header-svg {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.mobile-svg {
-  width: 10px;
-  height: 16px;
-}
-
-.header__link {
-  display: block;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link.current::after {
-  transform: scaleX(1);
-}
-
-.header__link::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scaleX(0);
-}
-
-.header__link:hover::after, .header__link:focus::after {
-  transform: scaleX(1);
-}
-
-.header__link:hover, .header__link:focus {
-  color: var(--accent-color);
-}
-
-.header__item {
-  position: relative;
-}
-
-.header__list {
-  display: flex;
-  align-items: center;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.mail {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .mail {
-    display: block;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .mail {
-    display: flex;
-    align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header__commun-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__commun-item:not(:last-child) {
-    margin-right: 50px;
-    margin-bottom: 0;
-  }
-}
-
-.header__commun-link {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__commun-link:hover, .header__commun-link:focus {
-  color: var(--accent-color);
-  fill: currentColor;
-}
-
 .main {
   background-color: #2f303a;
   min-height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(122, 124, 148, 0.4)), url(../../images/hero/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(122, 124, 148, 0.4)), url(/images/hero/hero-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
