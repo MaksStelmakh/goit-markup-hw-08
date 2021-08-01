@@ -38,6 +38,10 @@
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 30px;
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
   &::before {
     display: block;
@@ -97,6 +101,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-btn {

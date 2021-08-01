@@ -149,6 +149,13 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
@@ -214,6 +221,13 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .modal-lable-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .modal-lable-checkbox::before {
   display: block;
   content: "";
@@ -271,6 +285,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-btn {
