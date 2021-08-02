@@ -106,14 +106,14 @@
     </header>
     <main>
 <!------------------------------------MAIN----------------------------------->
-        <section class="main">
+        <!-- <section class="main">
             <div class="container">
                 <h1 class="main__text">Эффективные решения для вашего бизнеса</h1>
                 <button class="main__button" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
 <!------------------------------------INFO----------------------------------->
-        <section class="info">
+        <!-- <section class="info">
             <div class="container">
                 <ul class="list info__list">
                     <li class="info__item">
@@ -160,25 +160,34 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 <!-----------------------------------WORK------------------------------------>
         <section class="work">
             <div class="container work-container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="list work-list">
                     <li class="work-item">
-                        <img class="work-img" src="./images/work/work.jpg" alt="разработчик пишет код на планшете"
-                            width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px"srcset="./images/work/work1.webp 1x, ./images/work/work1@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px"srcset="./images/work/work1.jpg 1x, ./images/work/work1@2x.jpg 2x">
+                            <img class="work-img" src="#" alt="разработчик пишет код на планшете">
+                        </picture>
                         <p class="work-text">Десктопные приложения</p>
                     </li>
                     <li class="work-item">
-                        <img class="work-img" src="./images/work/work1.jpg" alt="разработчик работает за компьютером"
-                            width="370" height="294">
+                        <picture>
+                        <source media="(min-width: 1200px" srcset="./images/work/work2.webp 1x, ./images/work/work2@2x.webp 2x"type="image/webp">
+                        <source media="(min-width: 1200px" srcset="./images/work/work2.jpg 1x, ./images/work/work2@2x.jpg 2x">
+                        <img class="work-img" src="#" alt="разработчик пишет код на планшете">
+                        </picture>
                         <p class="work-text">Мобильные приложения</p>
                     </li>
                     <li class="work-item">
-                        <img class="work-img" src="./images/work/work2.jpg" alt="разработчик работает на планшете"
-                            width="370" height="294">
+                        <picture>
+                        <source media="(min-width: 1200px" srcset="./images/work/work3.webp 1x, ./images/work/work3@2x.webp 2x"type="image/webp">
+                        <source media="(min-width: 1200px" srcset="./images/work/work3.jpg 1x, ./images/work/work3@2x.jpg 2x">
+                        <img class="work-img" src="#" alt="разработчик пишет код на планшете">
+                        </picture>
                         <p class="work-text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -373,7 +382,7 @@
             </div>
         </section>
 <!--------------------------------------CLIENTS------------------------------>
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
                 <ul class="list clients-list">
@@ -422,7 +431,7 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
     <!--------------------------------FOOTER---------------------------------->
     <footer class="footer">
         <div class="container main-footer-container">
@@ -494,6 +503,7 @@
             </div>
         </div>
     </footer>
+<!--------------------------------------MODAL----------------------------------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>

@@ -11,6 +11,12 @@
     }
   }
 
+  &-container {
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
   &-text {
     font-weight: bold;
     font-size: 14px;
@@ -163,7 +169,6 @@
 }
 
 .contact-link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

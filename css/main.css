@@ -628,7 +628,7 @@ body {
 .main {
   background-color: #2f303a;
   min-height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(122, 124, 148, 0.4)), url(/images/hero/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(122, 124, 148, 0.4)), url(../../images/hero/hero-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -810,6 +810,11 @@ body {
   letter-spacing: 0.03em;
   bottom: 0;
   text-transform: uppercase;
+}
+
+.work-img {
+  width: 370px;
+  height: 294px;
 }
 
 .team {
@@ -999,6 +1004,12 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-list {
     margin-bottom: -9px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    text-align: left;
   }
 }
 
@@ -1195,7 +1206,6 @@ body {
 }
 
 .contact-link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
