@@ -189,6 +189,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--wite-color);
+  transition: opacity 250ms linear;
 
   &__container {
     position: relative;
@@ -250,9 +251,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 64px;
-    @media screen and (max-width: 450px) {
-      display: block;
-    }
   }
 
   &__social-link {
@@ -265,6 +263,9 @@
 
   &__social-item:not(:last-child) {
     margin-right: 20px;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__social-item:not(:last-child)::after {

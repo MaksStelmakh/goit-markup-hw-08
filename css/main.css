@@ -525,6 +525,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: var(--wite-color);
+  transition: opacity 250ms linear;
 }
 
 .mobile__container {
@@ -589,12 +590,6 @@ body {
   margin-top: 64px;
 }
 
-@media screen and (max-width: 450px) {
-  .mobile__social-list {
-    display: block;
-  }
-}
-
 .mobile__social-link {
   font-weight: 500;
   font-size: 18px;
@@ -605,6 +600,12 @@ body {
 
 .mobile__social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .mobile__social-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .mobile__social-item:not(:last-child)::after {
