@@ -5,33 +5,13 @@
       rgba(47, 48, 58, 0.4),
       rgba(122, 124, 148, 0.4)
     ),
-    url(../../images/hero/hero-mobile.jpg);
+    url(../images/hero/hero-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-
-  &__text {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--wite-color);
-    margin: 0 auto 30px auto;
-    max-width: 360px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main__text {
-    font-size: 44px;
-    line-height: 1.36;
-    max-width: 696px;
-  }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 280px),
@@ -42,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(122, 124, 148, 0.4)
       ),
-      url(../../images/hero/hero-mobile@2x.jpg);
+      url(../images/hero/hero-mobile@2x.jpg);
   }
 }
 
@@ -52,7 +32,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(122, 124, 148, 0.4)
       ),
-      url(../../images/hero/hero-tablet.jpg);
+      url(../images/hero/hero-tablet.jpg);
   }
 }
 
@@ -64,7 +44,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(122, 124, 148, 0.4)
       ),
-      url(../../images/hero/hero-tablet@2x.jpg);
+      url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
@@ -74,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(122, 124, 148, 0.4)
       ),
-      url(../../images/hero/hero-desktop.jpg);
+      url(../images/hero/hero-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -89,6 +69,23 @@
         rgba(47, 48, 58, 0.4),
         rgba(122, 124, 148, 0.4)
       ),
-      url(../../images/hero/hero-desktop@2x.jpg);
+      url(../images/hero/hero-desktop@2x.jpg);
+  }
+}
+
+.main__text {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--wite-color);
+  margin: 0 auto 30px auto;
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
