@@ -46,8 +46,14 @@
   margin-right: 8px;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-title:nth-child(-n + 3) {
+.menu-title:nth-child(-n + 3) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+
+.menu-title:nth-child(-n + 4) {
+  @media screen and (max-width: 399px) {
     margin-bottom: 15px;
   }
 }

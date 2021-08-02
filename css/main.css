@@ -1294,12 +1294,35 @@ body {
   }
 }
 
+@media screen and (max-width: 399px) {
+  .menu-title:nth-child(-n + 4) {
+    margin-bottom: 15px;
+  }
+}
+
 .projects-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color);
+}
+
+.project-img {
+  width: 100%;
+  height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-img {
+    width: 370px;
+  }
 }
 
 .projects-service {
@@ -1315,6 +1338,7 @@ body {
   padding-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .project-text {
