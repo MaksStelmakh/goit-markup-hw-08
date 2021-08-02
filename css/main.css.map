@@ -20,7 +20,7 @@
         "../sass/layout/_clients.scss",
         "../sass/layout/_footer.scss",
         "../sass/layout/_menu.scss",
-        "../sass/layout/_proects.scss"
+        "../sass/layout/_projects.scss"
     ],
     "names": [],
     "file": "main.css"
