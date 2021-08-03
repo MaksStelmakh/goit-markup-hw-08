@@ -11,9 +11,15 @@
   border-radius: 4px;
   padding: 40px;
   @media screen and (max-width: 1200px) {
-    width: 95%;
+    width: 450px;
     height: 609px;
     overflow: auto;
+    @media screen and (max-width: 459px) {
+      width: 95%;
+    }
+    @media screen and (max-height: 609px) {
+      height: 100%;
+    }
   }
 }
 
