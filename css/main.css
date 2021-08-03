@@ -282,6 +282,12 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 459px) {
+  .modal-checkbox:checked + .modal-lable-checkbox::before {
+    background-size: cover;
+  }
+}
+
 .modal-link {
   font-weight: 400;
   font-size: 14px;

@@ -92,6 +92,9 @@
 .modal-checkbox:checked + .modal-lable-checkbox::before {
   background-image: url(../images/checkbox/check.svg);
   background-size: contain;
+  @media screen and (max-width: 459px) {
+    background-size: cover;
+  }
   border: none;
 }
 
