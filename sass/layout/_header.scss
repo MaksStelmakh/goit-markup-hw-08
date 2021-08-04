@@ -11,6 +11,26 @@
   height: 16px;
 }
 
+.header__first-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.header__second-logo--black {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
 .header__link {
   display: block;
   font-family: Roboto, sans-serif;
@@ -110,6 +130,13 @@
   }
 }
 
+.main-mobile-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mail {
   @media screen and (max-width: 768px) {
     display: none;
@@ -132,8 +159,8 @@
   margin-right: 8px;
 
   &__icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 16px;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -150,26 +177,6 @@
   @media screen and (min-width: 1200px) {
     align-items: baseline;
   }
-}
-
-.header__first-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.header__second-logo--black {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-  text-decoration: none;
 }
 
 .mobile.is-open {
@@ -193,6 +200,7 @@
 
   &__container {
     position: relative;
+    height: 100%;
     padding: 48px 40px;
   }
 
@@ -231,8 +239,6 @@
   }
 
   &__commun {
-    margin-top: 302px;
-
     &-item:not(:last-child) {
       margin-bottom: 32px;
     }
